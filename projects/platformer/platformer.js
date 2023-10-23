@@ -28,25 +28,27 @@ $(function () {
      * Comment the lines out to remove the grid
      */
 
-    // for (let i = 100; i < canvas.width; i += 100) {
-    //   createPlatform(i, canvas.height, -1, -canvas.height);
-    // }
-    // for (let i = 100; i < canvas.height; i += 100) {
-    //   createPlatform(canvas.width, i, -canvas.width, -1);
-    // }
+     for (let i = 100; i < canvas.width; i += 100) {
+       createPlatform(i, canvas.height, -1, -canvas.height);
+     }
+     for (let i = 100; i < canvas.height; i += 100) {
+       createPlatform(canvas.width, i, -canvas.width, -1);
+     }
 
     /////////////////////////////////////////////////
     //////////ONLY CHANGE BELOW THIS POINT///////////
     /////////////////////////////////////////////////
-
+    
     // TODO 1
     // Create platforms
     // You must decide the x position, y position, width, and height of the platforms
     // example usage: createPlatform(x,y,width,height)
+    createPlatform(500, 650, 200, 20);
+    createPlatform(250, 550, 200, 20)
+    createPlatform(650, 450, 200, 20)
+    createPlatform(800, 340, 200, 20)
+    createPlatform(1000, 230, 200, 20)
 
-
-
-    
     // TODO 2
     // Create collectables
     // You must decide on the collectable type, the x position, the y position, the gravity, and the bounce strength
